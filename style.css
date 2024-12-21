@@ -1,0 +1,17 @@
+.intro--banner #typing-effect {
+    font-size: 65px;
+    font-family: Arial, sans-serif;
+    white-space: pre; 
+    overflow: hidden; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    background-size: 40% 40%; 
+    color: #fff;
+    height: 195px;
+  }
+  
+/* body outline animation */
+
+
+

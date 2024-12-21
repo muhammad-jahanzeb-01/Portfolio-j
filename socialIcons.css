@@ -1,0 +1,63 @@
+.group {
+    position: relative;
+    background: transparent;
+    display: flex;
+    gap: 1rem;
+  }
+  .icon-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .icon-wrapper {
+    position: relative;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease;
+    fill: currentColor;
+  }
+  
+  .border-icon {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+    color: #3b82f6; /* Blue color on hover */
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    background-color: #000;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none; /* Prevents accidental hover on tooltip */
+  }
+  
+  .icon-wrapper:hover .tooltip {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  
